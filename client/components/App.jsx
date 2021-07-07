@@ -1,9 +1,24 @@
 import React from 'react'
 
-const App = () => {
+import Header from './Header'
+import Nav from './Nav'
+import Footer from './Footer'
+
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+  render() {
   return (
-    <h1>React development has begun!</h1>
+    <div>
+      <Nav />
+      <Header />
+      <h1>Jobs!</h1>
+      {/* <Jobs /> */}
+      <Footer />
+    </div>
   )
+}
 }
 
 export default App
